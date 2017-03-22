@@ -2,8 +2,7 @@
     - Fonts
     - General CSS
     - Header
-    - Hero
-    - Search
+    - hiro
     - Listings
     - Footer
     - Responsive CSS
@@ -155,10 +154,14 @@ header nav ul li{
     margin-left: 50px;
 }
 
+header nav ul li:hover{
+    background: #f30000;
+    color: #000000;
+}
 header nav ul li a,
 header nav .login_btn{
     text-decoration: none;
-    color: #f30000;
+    color: #ffffff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
@@ -192,20 +195,20 @@ header nav .login_btn:hover{
 
 
 
-/*  Hero Section  */
+/*  hiro Section  */
 
-.hero{
+.hiro{
     width: 100%;
     height: 900px;
     position: relative;
-    background: url('../img/hero.jpg') no-repeat bottom center;
+    background: url('../img/hiro.jpg') no-repeat bottom center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
 
-.hero .caption{
+.hiro .caption{
     width: 100%;
     position: absolute;
     text-align: center;
@@ -214,7 +217,7 @@ header nav .login_btn:hover{
     z-index: 10;
 }
 
-.hero .caption h2{
+.hiro .caption h2{
     color: #fff;
     font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
     font-size: 100px;
@@ -224,7 +227,7 @@ header nav .login_btn:hover{
     display: block;
 }
 
-.hero .caption h3{
+.hiro .caption h3{
     color: #f30000;
     font-family: "lato-bold", Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -450,12 +453,12 @@ header nav .login_btn:hover{
     padding: 100px 0;
 }
 
-.listings ul.properties_list{
+.listings ul.dance_list{
     list-style: none;
     overflow: hidden;
 }
 
-.listings ul.properties_list li{
+.listings ul.dance_list li{
     display: block;
     width: 30.90909090909091%;
     height: auto;
@@ -464,14 +467,14 @@ header nav .login_btn:hover{
     margin: 0 3.636363636363636% 3.636363636363636% 0;
 }
 
-.listings ul.properties_list li img.property_img{
+.listings ul.dance_list li img.movement_img{
     width: 100%;
     height: auto!important;
     vertical-align: top;
 }
 
 
-.listings ul.properties_list li .price{
+.listings ul.dance_list li .price{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -490,13 +493,14 @@ header nav .login_btn:hover{
 }
 
 
-.listings ul.properties_list li:nth-child(3n+0){
+.listings ul.dance_list li:nth-child(3n+0){
     margin-right: 0;
 }
 
-.listings ul li .property_details{
+.listings ul li .dance_details{
     width: 87.64705882352941%;
     padding: 2.941176470588235% 5.882352941176471% 4.117647058823529% 5.882352941176471%;
+    text-align: center;
     border-bottom: 1px solid #f2f1f1;
     border-left: 1px solid #f2f1f1;
     border-right: 1px solid #f2f1f1;
@@ -507,27 +511,27 @@ header nav .login_btn:hover{
     -o-transition: all .2s linear;
 }
 
-.listings ul li:hover .property_details{
+.listings ul li:hover .movement_details{
     border-bottom: 1px solid #95badf;
     border-left: 1px solid #95badf;
     border-right: 1px solid #95badf;
 }
 
-.listings ul li .property_details h1{
+.listings ul li .dance_details h1{
     color: #666464;
     font-family: "lato-bold", Helvetica, Arial, sans-serif;
-    font-size: 16px!important;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
     line-height: 28px;
 }
 
-.listings ul li .property_details h1 a{
+.listings ul li .dance_details h1 a{
     text-decoration: none;
     color: #666464;
 }
 
-.listings ul li .property_details h2{
+.listings ul li .dance_details h2{
     color: #9d9d9d;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -535,7 +539,7 @@ header nav .login_btn:hover{
     font-weight: normal;
 }
 
-.listings ul li .property_details .property_size{
+.listings ul li .dance_details .movement_size{
     color: #676767;
 }
 
@@ -549,12 +553,12 @@ header nav .login_btn:hover{
 .listings .more_listing_btn{
     text-decoration: none;
     padding: 20px 40px;
-    border: 2px solid #bfd9f1;
+    border: 2px solid #f30000;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -o-border-radius: 30px;
-    color: #afcbe6;
+    color: #f30000;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 16px;
     text-transform: uppercase;
@@ -607,12 +611,14 @@ footer .footer > ul > li.links{
     width: 197px;
 }
 
+
 footer ul li.links > ul > li{
     display: block;
     width: 100%;
     list-style: none;
     margin-bottom: 27px;
 }
+
 
 footer ul li.links > ul > li:last-child{
     margin-bottom: 0;
@@ -710,7 +716,7 @@ footer .copyrights a.ph_link{
 
 
 @media (max-width:1500px){
-    .hero{
+    .hiro{
         height: 800px;
     }
 }
@@ -760,16 +766,16 @@ footer .copyrights a.ph_link{
 
 
 @media (max-width:800px){
-    .hero{
+    .hiro{
         height: 600px;
     }
 
-    .hero .caption{
+    .hiro .caption{
         width: 92.72727272727273%;
         padding: 0 3.636363636363636%; 
     }
 
-    .hero .caption h3{
+    .hiro .caption h3{
         margin: 0;
         left: 0;
     }
@@ -848,16 +854,16 @@ footer .copyrights a.ph_link{
         border: 0;
     }
 
-    .listings ul.properties_list li{
+    .listings ul.dance_list li{
         width: 46.36363636363636%;
         margin: 0 7.272727272727273% 7.272727272727273% 0;
     }
 
-    .listings ul.properties_list li:nth-child(3n+0){
+    .listings ul.dance_list li:nth-child(3n+0){
         margin: 0 7.272727272727273% 7.272727272727273% 0;
     }
 
-    .listings ul.properties_list li:nth-child(2n+0){
+    .listings ul.dance_list li:nth-child(2n+0){
         margin-right: 0;
     }
 
@@ -919,11 +925,11 @@ footer .copyrights a.ph_link{
 
 
 @media (max-width:500px){
-    .hero .caption h2{
+    .hiro .caption h2{
         font-size: 85px;
     }
 
-    .hero .caption h3{
+    .hiro .caption h3{
         font-size: 16px;
     }
 
@@ -931,18 +937,18 @@ footer .copyrights a.ph_link{
         width: 83%;
     }
 
-    .listings ul.properties_list li{
+    .listings ul.dance_list li{
         width: 100%;
         margin-bottom: 60px!important;
     }
 
-    .listings ul.properties_list li:last-child{
+    .listings ul.dance_list li:last-child{
         margin-bottom: 0!important;
     }
 
 
-    .listings ul.properties_list li:nth-child(3n+0),
-    .listings ul.properties_list li:nth-child(2n+0){
+    .listings ul.dance_list li:nth-child(3n+0),
+    .listings ul.dance_list li:nth-child(2n+0){
         margin:0;
     }
 
