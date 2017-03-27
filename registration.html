@@ -3,7 +3,7 @@
 <head>
 	<title>Sensual Bachata</title>
 	<meta charset="utf-8">
-	<meta name="author" content="wptny.com">
+	<meta name="author" content="www.sensualmovementstudio.com">
 	<meta name="description" content="Sensual bachata"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
@@ -18,14 +18,13 @@
 <section class="hiro">
 	<header> <!--  start header section  -->
 		<div class="wrapper">
-			<a href="#"><img src="img/logo.png" class="logo" alt="" title=""/></a>
+			<a href="index.html"><img src="img/logo.svg" class="logo" alt="" title=""/></a>
 			<a href="#" class="hamburger"></a>
 			<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="classes.html">Classes</a></li>
-					<li><a href="staff.html">Trainers</a></li>
+					<li><a href="trainers.html">Trainers</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<a href="registration.html" class="login_btn">Registration</a>
@@ -39,60 +38,39 @@
 	</section>
 </section><!--  end hiro section  -->
 
+<section class="registration">
+	<div class="container"><!--  start registration form -->
+		<form id="myForm" action="">
+			<h1>Registration Form</h1>
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-<section class="listings"><!--  start listing dance section  -->
-	<div class="wrapper">
-		<ul class="dance_list">
-			<li>
-				<a href="#">
-					<img src="img/movement_1.png" alt="" title="" class="movement_img"/>
-				</a>
-				<div class="dance_details">
-					<h1>
-						<a href="#">Learn Sensual Bachata </a>
-					</h1>
-					<h2>Sign up for weekly lessons...<br>and sign up for <span class="movement_size">Free Lesson</span></h2>
-				</div>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/movement_2.png" alt="" title="" class="movement_img"/>
-				</a>
-				<div class="dance_details">
-					<h1>
-						<a href="#">Dance social</a>
-					</h1>
-					<h2>Join us for the latest, hottest,<br>Bachata Socials in NYC ...</h2>
-				</div>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/movement_3.png" alt="" title="" class="movement_img"/>
-				</a>
-				<div class="dance_details">
-					<h1>
-						<a href="#">Performance Team Auditions</a>
-					</h1>
-					<h2>Info about next season auditions<br> is coming soon...</h2>
-				</div>
-			</li>
-			<li>
-		</ul>
-		<div class="more_listing">
-			<a href="#" class="more_listing_btn">View More Information</a>
-		</div>
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+			<label for="country">Country</label>
+			<select id="country" name="country">
+				<option value="mexico">Mexico</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			</select>
+
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+			<button type="button" onclick="alert('Thank you for your information!')">Submit</button>
+			<input type="button" onclick="myFunction()" value="Reset form">
+		</form>
+
 	</div>
-</section>	<!--  end listing dance section  -->
-
-
-<section><!--insert video youtube-->
-
 </section>
+
 <footer> <!--  start footer dance section  -->
 	<div class="wrapper footer">
 		<ul>
 			<li class="links">
 				<ul>
+					<li><a href="#"><img src="img/logo.png" class="logo" alt="" title=""/></a></li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="classes.html">Classes</a></li>
@@ -132,8 +110,13 @@
 	</div>
 
 	<div class="copyrights wrapper"> <!--start copyrights-->
-		Copyright © 2017 <a href="http://www.sensualmovementstudio.com/" target="_blank" class="ph_link" title="">Serhiy Yarosh</a>. All Rights Reserved.
-	</div> <!--start copyrights-->
+		<p>
+			Tel: 929.376.8884 520 8th Ave, New York, NY 10018 <a href="info@sensualmovementstudio.com">info@sensualmovementstudio.com</a>
+		</p>
+		<p>Copyright © 2017 <a href="http://www.sensualmovementstudio.com/" target="_blank" class="ph_link" title="">Sensual Movement Studio</a>. All Rights Reserved. <a href="">Terms of Service.</a>
+		</p>
+
+	</div> <!--end copyrights-->
 </footer><!--  end footer dance section -->
 
 </body>
